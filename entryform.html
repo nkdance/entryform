@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Competition Registration</title>
+</head>
+<body>
+    <h2>Dance Competition Registration</h2>
+    <form action="process_registration.php" method="post">
+        <label for="country">Country:</label>
+        <input type="text" name="country" required><br>
+
+        <label for="studio">Dancing Studio:</label>
+        <input type="text" name="studio" required><br>
+
+        <label for="names">Full Names:</label>
+        <input type="text" name="names" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br>
+
+        <label for="category">Dancing Category:</label>
+        <select name="category" required>
+            <option value="junior">Junior</option>
+            <option value="youth">Youth</option>
+            <option value="adult">Adult</option>
+        </select><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
